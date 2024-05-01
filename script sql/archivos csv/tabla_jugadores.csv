@@ -1,0 +1,22 @@
+id_jugador,posicion_jugador,categoria,club,numero_que_usa_jugador
+1,Lateral derecho,mayor,comunicaciones,26
+2,"Lateral izquierdo
+",mayor,comunicaciones,6
+3,"Extremo izquierdo
+",mayor,comunicaciones,24
+4,Central,mayor,comunicaciones,11
+5,Pivote,mayor,comunicaciones,15
+6,"Lateral derecho
+",mayor,comunicaciones,17
+7,Arquero,mayor,comunicaciones,32
+8,Pivote,mayor,comunicaciones,10
+9,Extremo derecho,mayor,comunicaciones,22
+10,Extremo izquierdo ,mayor,comunicaciones,23
+11,Lateral derecho,mayor,comunicaciones,5
+12,Extremo derecho,mayor,comunicaciones,7
+13,"Pivote
+",mayor,comunicaciones,9
+14,"Arquero
+",mayor,comunicaciones,16
+15,Arquero,mayor,comunicaciones,12
+16,Central,mayor,comunicaciones,14

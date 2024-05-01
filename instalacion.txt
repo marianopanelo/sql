@@ -1,0 +1,80 @@
+1-Abra la carpeta "script_sql".
+
+2-Abra el script 1_creacion_de_Tablas
+a-Ejecute la información
+
+3-Abra el script 2_insercion_de_datos
+a-ejecutar el script 
+c-en la linea 38
+b-Cargue la información de las carpeta archivos csv a las tablas correspondientes:
+"tabla_jugadores" a la tabla "jugadores".
+"tabla_jugadores_puntos" a la tabla "jugadores_puntos".
+"tabla_jugadores_datos" a la tabla "jugadores_datos".
+"tabla_Jugadores_seleccionados_por_usuario" a la tabla "Jugadores_seleccionados_por_usuario".
+c- hasta la linea 48
+
+--------------------------------------------------------------------------------------------
+pasos a seguir para cargar datos a las tablas
+a) Solicite una visualización de la tabla utilizando el siguiente comando SQL:
+SELECT * FROM nombre_de_Tabla_para_cargar_datos;
+Esto mostrará una tabla vacía.
+
+b) Presione el botón para cargar datos, ubicado arriba de la tabla,
+con el ícono de una hoja de cálculo y una carpeta con una flecha hacia arriba.
+
+c) Busque el archivo con los datos a cargar (en nuestro caso estarán en la carpeta "script_sql").
+
+d) Seleccione "Use existing table" (Usar tabla existente) y busque la tabla en la 
+que desee cargar datos. Luego, haga clic en "Next" (Siguiente).
+
+e) Será llevado a una ventana donde verá los datos de la tabla actual 
+y los datos que va a cargar. Además, habrá una previsualización de la tabla debajo. Presione "Next" (Siguiente) 
+y los datos serán cargados. Finalice el proceso.
+--------------------------------------------------------------------------------------------
+
+4- Abra el script 3_vistas
+a-Ejecute la información 
+
+5- Abra el script 4_funciones
+a-Ejecute la información
+ 
+6-Abra el script 5_procedimientos
+a-Ejecute la información 
+--------------------------------------------------------------------------------------------
+ CABE ACLARAR QUE NE LAS VISTAS, FUNCIONES Y PROCEDIMIENTOS LOS EJEMPLOS ESTAN COMENTADOS Y LOS DROP ESTAN ACTIVOS
+--------------------------------------------------------------------------------------------
+7-Abra el script 6_triggers
+a-Ejecute la información 
+
+--------------------------------------------------------------------------------------------
+
+Procesos para otorgar privilegios a un usuario:
+
+8)Abra el archivo 7_DCL.sql, el cual contendrá un ejemplo de cómo proceder.
+a)Ejecute el siguiente código para verificar los usuarios existentes en la base de datos MySQL:
+USE mysql;
+SELECT * FROM user;
+
+b)Cree un nuevo usuario en la base de datos.
+c)Otorgue los permisos deseados al usuario recién creado.
+--------------------------------------------------------------------------------------------
+
+
+Procesos para hacer commit, rollback y savepoint:
+
+9)Abra el archivo 8_TLC.sql, el cual contendrá ejemplos de cada uno de ellos.
+
+a)Verifique si los siguientes códigos están establecidos en 0. En caso contrario, ajústelos mediante:
+SELECT @@SQL_SAFE_UPDATES; 
+SELECT @@FOREIGN_KEY_CHECKS; 
+SELECT @@autocommit; 
+
+SET SQL_SAFE_UPDATES = 0;
+SET FOREIGN_KEY_CHECKS = 0;
+SET autocommit = 0;
+
+Con savepoint, podrá guardar un punto para poder regresar a él en caso de cometer un error.
+Con rollback, podrá volver a un punto guardado en caso de equivocarse durante la carga.
+Con commit, validará los cambios proporcionados y será el último que se utilice.
+--------------------------------------------------------------------------------------------
+FALTA BAKAP
